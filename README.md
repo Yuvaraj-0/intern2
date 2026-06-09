@@ -1,6 +1,6 @@
-# Intern Project - Task Manager API
+# Intern Project - Auth+crud API
 
-A full-stack task management application with JWT authentication, role-based access control, product CRUD, and Redis caching.
+A full-stack crud application with JWT authentication, role-based access control, product CRUD, and Redis caching.
 
 ## 🚀 Tech Stack
 
