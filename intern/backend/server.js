@@ -9,6 +9,9 @@ import connectDB from "./config/db.js";
 import redisClient from "./config/redis.js";
 import authRoutes from "./routes/authRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
+import swaggerUi from 'swagger-ui-express';
+import swaggerSpec from './config/swagger.js';
+
 
 dotenv.config();
 
@@ -31,7 +34,15 @@ app.use(express.json());
 
 app.use(cors());
 
+
 app.use(helmet());
+
+
+// Add this before your routes
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
+console.log('📚 Swagger docs available at: http://localhost:3000/api-docs');
+
+
 await redisClient.set("test", "hello redis");
 
 const value = await redisClient.get("test");
