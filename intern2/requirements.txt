@@ -1,0 +1,37 @@
+# fastapi==0.104.1
+# uvicorn[standard]==0.24.0
+# sqlalchemy==2.0.23
+# psycopg2-binary==2.9.9
+# celery==5.3.4
+# redis==5.0.1
+# pandas==2.1.3
+# python-multipart==0.0.6
+# python-dotenv==1.0.0
+# requests==2.31.0  # For calling Ollama API
+# tenacity==8.2.3
+
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Database
+sqlalchemy==2.0.23
+psycopg2-binary==2.9.9
+
+# Async Task Queue
+celery==5.3.4
+redis==5.0.1
+
+# Data Processing
+pandas==2.1.3
+numpy==1.26.4
+
+# File Upload
+python-multipart==0.0.6
+
+# Configuration
+python-dotenv==1.0.0
+
+# LLM Integration
+requests==2.31.0
+tenacity==8.2.3
